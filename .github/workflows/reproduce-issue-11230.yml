@@ -1,0 +1,30 @@
+name: Reproduce Issue 11230
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - '*'
+  workflow_dispatch:
+
+jobs:
+  repro-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Make gradlew executable
+        run: chmod +x reproduction-11230/gradlew
+
+      - name: Run Reproduction Test
+        working-directory: ./reproduction-11230
+        run: ./gradlew test --info
