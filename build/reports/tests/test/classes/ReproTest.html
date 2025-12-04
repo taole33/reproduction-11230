@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class ReproTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class ReproTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; ReproTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">3.197s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testImageResolution()</td>
+<td class="success">3.197s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Attempting to start container: docker.io/redocly/cli:2.11.1
+16:49:32.286 [Test worker] DEBUG o.t.u.TestcontainersConfiguration - Testcontainers configuration overrides will be loaded from file:/home/shirai/.testcontainers.properties
+16:49:32.302 [Test worker] DEBUG o.t.u.TestcontainersConfiguration - Attempted to read Testcontainers configuration file at file:/home/shirai/.testcontainers.properties but the file was not found. Exception message: FileNotFoundException: /home/shirai/.testcontainers.properties (No such file or directory)
+16:49:32.308 [Test worker] INFO  o.testcontainers.images.PullPolicy - Image pull policy will be performed by: DefaultPullPolicy()
+16:49:32.311 [Test worker] INFO  o.t.utility.ImageNameSubstitutor - Image name substitution will be performed by: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor')
+16:49:32.318 [Test worker] INFO  o.testcontainers.DockerClientFactory - Testcontainers version: 2.0.2
+16:49:32.540 [Test worker] DEBUG o.t.d.DockerClientProviderStrategy - Trying out strategy: EnvironmentAndSystemPropertyClientProviderStrategy
+16:49:32.836 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: 
+16:49:33.098 [Test worker] INFO  o.t.d.DockerClientProviderStrategy - Found Docker environment with Environment variables, system properties and defaults. Resolved dockerHost=unix:///run/user/1000/podman/podman.sock
+16:49:33.098 [Test worker] DEBUG o.t.d.DockerClientProviderStrategy - Transport type: 'httpclient5', Docker host: 'unix:///run/user/1000/podman/podman.sock'
+16:49:33.098 [Test worker] DEBUG o.t.d.DockerClientProviderStrategy - Checking Docker OS type for Environment variables, system properties and defaults. Resolved dockerHost=unix:///run/user/1000/podman/podman.sock
+16:49:33.099 [Test worker] INFO  o.testcontainers.DockerClientFactory - Docker host IP address is localhost
+16:49:33.099 [Test worker] DEBUG o.testcontainers.DockerClientFactory - Docker info: {NGoroutines=11, BuildahVersion=1.23.1, Name=windows, Swarm={NodeID=, NodeAddr=, LocalNodeState=inactive, ControlAvailable=false, Error=, RemoteManagers=null}, RuncCommit={ID=, Expected=}, OSVersion=22.04, Runtimes={crun={path=/usr/bin/crun}, kata={path=/usr/bin/kata-runtime}, runc={path=/usr/bin/runc}, runsc={path=/usr/bin/runsc}}, ID=a1bc646b-31b6-4b0d-9cc3-bd92e88d3b4f, DriverStatus=[[Native Overlay Diff, true], [Using metacopy, false], [Backing Filesystem, extfs], [Supports d_type, true]], BridgeNfIptables=true, LiveRestoreEnabled=false, SystemTime=2025-12-04T16:49:32.982644338+09:00, NoProxy=, Architecture=amd64, NEventsListener=0, HttpsProxy=, Images=14, ContainersRunning=0, Labels=null, InitCommit={ID=, Expected=}, NFd=11, KernelVersion=5.15.167.4-microsoft-standard-WSL2, CPURealtimeRuntime=true, LoggingDriver=, OSType=linux, SecurityOptions=[name=seccomp,profile=default], ContainerdCommit={ID=, Expected=}, GenericResources=null, KernelMemory=true, OperatingSystem=ubuntu, RegistryConfig={AllowNondistributableArtifactsCIDRs=null, AllowNondistributableArtifactsHostnames=null, InsecureRegistryCIDRs=null, IndexConfigs=null, Mirrors=null}, ServerVersion=3.4.4, OomKillDisable=true, CpuCfsQuota=true, Containers=0, Driver=overlay, KernelMemoryTCP=false, IPv4Forwarding=false, ExperimentalBuild=true, ProductLicense=Apache-2.0, DockerRootDir=/home/shirai/.local/share/containers/storage, CPUSet=true, CpuCfsPeriod=true, DefaultRuntime=crun, SwapTotal=2147483648, CPUShares=true, Debug=false, NCPU=16, Plugins={Volume=[local], Network=[bridge, macvlan], Authorization=null, Log=[k8s-file, none, journald]}, SwapLimit=true, CgroupDriver=cgroupfs, Uptime=6h 3m 9.22s (Approximately 0.25 days), SwapFree=2096914432, Rootless=true, ContainersPaused=0, MemTotal=7986302976, IndexServerAddress=, MemoryLimit=true, HttpProxy=, InitBinary=, CPURealtimePeriod=true, CgroupVersion=1, PidsLimit=true, Isolation=, BridgeNfIp6tables=true, Warnings=[], ContainersStopped=0}
+16:49:33.101 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: 
+16:49:33.272 [Test worker] DEBUG o.testcontainers.DockerClientFactory - Docker version: {Components=[{Name=Podman Engine, Version=3.4.4, Details={APIVersion=3.4.4, Arch=amd64, BuildTime=1970-01-01T09:00:00+09:00, Experimental=false, GitCommit=, GoVersion=go1.18.1, KernelVersion=5.15.167.4-microsoft-standard-WSL2, MinAPIVersion=3.1.0, Os=linux}}, {Name=Conmon, Version=conmon version 2.0.25, commit: unknown, Details={Package=conmon: /usr/bin/conmon}}, {Name=OCI Runtime (crun), Version=crun version 0.17
+commit: 0e9229ae34caaebcb86f1fde18de3acaf18c6d9a
+spec: 1.0.0
++SYSTEMD +SELINUX +APPARMOR +CAP +SECCOMP +EBPF +YAJL, Details={Package=crun: /usr/bin/crun}}], KernelVersion=5.15.167.4-microsoft-standard-WSL2, ApiVersion=1.40, Platform={Name=linux/amd64/ubuntu-22.04}, GitCommit=, Os=linux, Version=3.4.4, MinAPIVersion=1.24, Arch=amd64, GoVersion=go1.18.1, BuildTime=1970-01-01T09:00:00+09:00}
+16:49:33.272 [Test worker] INFO  o.testcontainers.DockerClientFactory - Connected to docker: 
+  Server Version: 3.4.4
+  API Version: 1.40
+  Operating System: ubuntu
+  Total Memory: 7616 MB
+16:49:33.282 [Test worker] DEBUG o.t.utility.RyukResourceReaper - Ryuk is enabled
+16:49:33.284 [Test worker] DEBUG o.t.u.PrefixingImageNameSubstitutor - No prefix is configured
+16:49:33.284 [Test worker] DEBUG o.t.utility.ImageNameSubstitutor - Did not find a substitute image for testcontainers/ryuk:0.13.0 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+16:49:33.286 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ListImagesCmdImpl[filters=org.testcontainers.shaded.com.github.dockerjava.core.util.FiltersBuilder@0,imageNameFilter=&lt;null&gt;,showAll=false]
+16:49:33.363 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: testcontainers/ryuk:0.13.0
+16:49:33.402 [Test worker] DEBUG o.t.images.AbstractImagePullPolicy - Using locally available and not pulling image: testcontainers/ryuk:0.13.0
+16:49:33.403 [Test worker] INFO  tc.testcontainers/ryuk:0.13.0 - Creating container for image: testcontainers/ryuk:0.13.0
+16:49:33.409 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - Looking up auth config for image: testcontainers/ryuk:0.13.0 at registry: 
+16:49:33.409 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - RegistryAuthLocator has configFile: /home/shirai/.docker/config.json (exists) configEnv: DOCKER_AUTH_CONFIG (does not exist) and commandPathPrefix: 
+16:49:33.410 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - RegistryAuthLocator reading from configFile: /home/shirai/.docker/config.json
+16:49:33.410 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - registryName [] for dockerImageName [testcontainers/ryuk:0.13.0]
+16:49:33.410 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - There is no point in locating AuthConfig for blank hostName. Returning NULL to allow fallback
+16:49:33.411 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - No matching Auth Configs - falling back to defaultAuthConfig [null]
+16:49:33.411 [Test worker] DEBUG o.t.d.AuthDelegatingDockerClientConfig - Effective auth config [null]
+16:49:33.425 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: org.testcontainers.shaded.com.github.dockerjava.core.command.CreateContainerCmdImpl@431f1eaf[aliases=&lt;null&gt;,argsEscaped=&lt;null&gt;,attachStderr=&lt;null&gt;,attachStdin=&lt;null&gt;,attachStdout=&lt;null&gt;,authConfig=&lt;null&gt;,cmd={},domainName=&lt;null&gt;,entrypoint=&lt;null&gt;,env={},exposedPorts=ExposedPorts(exposedPorts=[8080/tcp]),healthcheck=&lt;null&gt;,hostConfig=HostConfig(binds=[/run/user/1000/podman/podman.sock:/var/run/docker.sock:rw], blkioWeight=null, blkioWeightDevice=null, blkioDeviceReadBps=null, blkioDeviceWriteBps=null, blkioDeviceReadIOps=null, blkioDeviceWriteIOps=null, memorySwappiness=null, nanoCPUs=null, annotations=null, capAdd=null, capDrop=null, containerIDFile=null, cpuPeriod=null, cpuRealtimePeriod=null, cpuRealtimeRuntime=null, cpuShares=null, cpuQuota=null, cpusetCpus=null, cpusetMems=null, devices=null, deviceCgroupRules=null, deviceRequests=null, diskQuota=null, dns=null, dnsOptions=null, dnsSearch=null, extraHosts=[], groupAdd=null, ipcMode=null, cgroup=null, links=[], logConfig=LogConfig(type=null, config=null), lxcConf=null, memory=null, memorySwap=null, memoryReservation=null, kernelMemory=null, networkMode=null, oomKillDisable=null, init=null, autoRemove=true, oomScoreAdj=null, portBindings={8080/tcp=[Lcom.github.dockerjava.api.model.Ports$Binding;@fca387}, privileged=true, publishAllPorts=null, readonlyRootfs=null, restartPolicy=null, ulimits=null, cpuCount=null, cpuPercent=null, ioMaximumIOps=null, ioMaximumBandwidth=null, volumesFrom=[], mounts=null, pidMode=null, isolation=null, securityOpts=null, storageOpt=null, cgroupParent=null, volumeDriver=null, shmSize=null, pidsLimit=null, runtime=null, tmpFs=null, utSMode=null, usernsMode=null, sysctls=null, consoleSize=null, cgroupnsMode=null),hostName=&lt;null&gt;,image=testcontainers/ryuk:0.13.0,ipv4Address=&lt;null&gt;,ipv6Address=&lt;null&gt;,labels={org.testcontainers=true, org.testcontainers.lang=java, org.testcontainers.version=2.0.2},macAddress=&lt;null&gt;,name=testcontainers-ryuk-f95b20ec-34db-4a9d-b2a0-d044e84ad93a,networkDisabled=&lt;null&gt;,networkingConfig=&lt;null&gt;,onBuild=&lt;null&gt;,platform=&lt;null&gt;,portSpecs=&lt;null&gt;,shell=&lt;null&gt;,stdInOnce=&lt;null&gt;,stdinOpen=&lt;null&gt;,stopSignal=&lt;null&gt;,stopTimeout=&lt;null&gt;,tty=&lt;null&gt;,user=&lt;null&gt;,volumes=Volumes(volumes=[]),workingDir=&lt;null&gt;]
+16:49:33.520 [Test worker] INFO  tc.testcontainers/ryuk:0.13.0 - Container testcontainers/ryuk:0.13.0 is starting: cb7f02e640087ddceb6a13fa9a2a1b3aed52daba63d98d0913d3b33146ba8d48
+16:49:33.521 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: cb7f02e640087ddceb6a13fa9a2a1b3aed52daba63d98d0913d3b33146ba8d48
+16:49:33.824 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: cb7f02e640087ddceb6a13fa9a2a1b3aed52daba63d98d0913d3b33146ba8d48,false
+16:49:33.826 [Test worker] DEBUG o.t.s.c.g.d.c.e.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/cb7f02e640087ddceb6a13fa9a2a1b3aed52daba63d98d0913d3b33146ba8d48/json], queryParams={}}
+16:49:33.907 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: docker.io/testcontainers/ryuk:0.13.0
+16:49:33.918 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: 
+16:49:34.076 [Test worker] DEBUG o.t.c.output.WaitingConsumer - STDOUT: time=2025-12-04T07:49:33.822Z level=INFO msg=starting connection_timeout=1m0s reconnection_timeout=10s request_timeout=10s shutdown_timeout=10m0s remove_retries=10 retry_offset=-1s changes_retry_interval=1s port=8080 verbose=false
+16:49:34.077 [Test worker] DEBUG o.t.c.output.WaitingConsumer - STDOUT: time=2025-12-04T07:49:33.822Z level=INFO msg=&quot;client processing started&quot;
+16:49:34.077 [Test worker] DEBUG o.t.c.output.WaitingConsumer - STDOUT: time=2025-12-04T07:49:33.822Z level=INFO msg=Started address=[::]:8080
+16:49:34.078 [Test worker] INFO  tc.testcontainers/ryuk:0.13.0 - Container testcontainers/ryuk:0.13.0 started in PT0.674859685S
+16:49:34.081 [testcontainers-ryuk] DEBUG o.t.utility.ResourceReaper - Sending 'label=org.testcontainers%3Dtrue&amp;label=org.testcontainers.lang%3Djava&amp;label=org.testcontainers.version%3D2.0.2&amp;label=org.testcontainers.sessionId%3Df95b20ec-34db-4a9d-b2a0-d044e84ad93a' to Ryuk
+16:49:34.083 [testcontainers-ryuk] DEBUG o.t.utility.RyukResourceReaper - Received 'ACK' from Ryuk
+16:49:34.083 [Test worker] INFO  o.t.utility.RyukResourceReaper - Ryuk started - will monitor and terminate Testcontainers containers on JVM exit
+16:49:34.083 [Test worker] DEBUG o.testcontainers.DockerClientFactory - Checks are enabled
+16:49:34.083 [Test worker] INFO  o.testcontainers.DockerClientFactory - Checking the system...
+16:49:34.084 [Test worker] INFO  o.testcontainers.DockerClientFactory - ✔︎ Docker server version should be at least 1.6.0
+16:49:34.084 [Test worker] DEBUG o.t.u.PrefixingImageNameSubstitutor - No prefix is configured
+16:49:34.084 [Test worker] DEBUG o.t.utility.ImageNameSubstitutor - Did not find a substitute image for docker.io/redocly/cli:2.11.1 (using image substitutor: DefaultImageNameSubstitutor (composite of 'ConfigurationFileImageNameSubstitutor' and 'PrefixingImageNameSubstitutor'))
+16:49:34.085 [Test worker] DEBUG o.t.images.AbstractImagePullPolicy - Using locally available and not pulling image: docker.io/redocly/cli:2.11.1
+16:49:34.085 [Test worker] INFO  tc.docker.io/redocly/cli:2.11.1 - Creating container for image: docker.io/redocly/cli:2.11.1
+16:49:34.086 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - Looking up auth config for image: docker.io/redocly/cli:2.11.1 at registry: docker.io
+16:49:34.086 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - RegistryAuthLocator has configFile: /home/shirai/.docker/config.json (exists) configEnv: DOCKER_AUTH_CONFIG (does not exist) and commandPathPrefix: 
+16:49:34.086 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - RegistryAuthLocator reading from configFile: /home/shirai/.docker/config.json
+16:49:34.086 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - registryName [docker.io] for dockerImageName [docker.io/redocly/cli:2.11.1]
+16:49:34.086 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - Executing docker credential provider: docker-credential-desktop.exe to locate auth config for: docker.io
+16:49:34.092 [Test worker] DEBUG o.t.s.o.z.exec.ProcessExecutor - Executing [docker-credential-desktop.exe, get].
+16:49:34.114 [Test worker] DEBUG o.t.s.o.z.exec.ProcessExecutor - Started Process[pid=133986, exitValue=&quot;not exited&quot;]
+16:49:34.209 [WaitForProcess-Process[pid=133986, exitValue=&quot;not exited&quot;]] DEBUG o.t.s.o.z.exec.WaitForProcess - Process[pid=133986, exitValue=1] stopped with exit code 1
+16:49:34.211 [Test worker] INFO  o.t.utility.RegistryAuthLocator - Credential helper/store (docker-credential-desktop.exe) does not have credentials for docker.io
+16:49:34.211 [Test worker] DEBUG o.t.utility.RegistryAuthLocator - No matching Auth Configs - falling back to defaultAuthConfig [null]
+16:49:34.211 [Test worker] DEBUG o.t.d.AuthDelegatingDockerClientConfig - Effective auth config [null]
+16:49:34.212 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: org.testcontainers.shaded.com.github.dockerjava.core.command.CreateContainerCmdImpl@7ca8d498[aliases=&lt;null&gt;,argsEscaped=&lt;null&gt;,attachStderr=&lt;null&gt;,attachStdin=&lt;null&gt;,attachStdout=&lt;null&gt;,authConfig=&lt;null&gt;,cmd={sleep,100},domainName=&lt;null&gt;,entrypoint=&lt;null&gt;,env={},exposedPorts=ExposedPorts(exposedPorts=[]),healthcheck=&lt;null&gt;,hostConfig=HostConfig(binds=[], blkioWeight=null, blkioWeightDevice=null, blkioDeviceReadBps=null, blkioDeviceWriteBps=null, blkioDeviceReadIOps=null, blkioDeviceWriteIOps=null, memorySwappiness=null, nanoCPUs=null, annotations=null, capAdd=null, capDrop=null, containerIDFile=null, cpuPeriod=null, cpuRealtimePeriod=null, cpuRealtimeRuntime=null, cpuShares=null, cpuQuota=null, cpusetCpus=null, cpusetMems=null, devices=null, deviceCgroupRules=null, deviceRequests=null, diskQuota=null, dns=null, dnsOptions=null, dnsSearch=null, extraHosts=[], groupAdd=null, ipcMode=null, cgroup=null, links=[], logConfig=LogConfig(type=null, config=null), lxcConf=null, memory=null, memorySwap=null, memoryReservation=null, kernelMemory=null, networkMode=null, oomKillDisable=null, init=null, autoRemove=null, oomScoreAdj=null, portBindings={}, privileged=null, publishAllPorts=null, readonlyRootfs=null, restartPolicy=null, ulimits=null, cpuCount=null, cpuPercent=null, ioMaximumIOps=null, ioMaximumBandwidth=null, volumesFrom=[], mounts=null, pidMode=null, isolation=null, securityOpts=null, storageOpt=null, cgroupParent=null, volumeDriver=null, shmSize=null, pidsLimit=null, runtime=null, tmpFs=null, utSMode=null, usernsMode=null, sysctls=null, consoleSize=null, cgroupnsMode=null),hostName=&lt;null&gt;,image=docker.io/redocly/cli:2.11.1,ipv4Address=&lt;null&gt;,ipv6Address=&lt;null&gt;,labels={org.testcontainers=true, org.testcontainers.lang=java, org.testcontainers.version=2.0.2, org.testcontainers.sessionId=f95b20ec-34db-4a9d-b2a0-d044e84ad93a},macAddress=&lt;null&gt;,name=&lt;null&gt;,networkDisabled=&lt;null&gt;,networkingConfig=&lt;null&gt;,onBuild=&lt;null&gt;,platform=&lt;null&gt;,portSpecs=&lt;null&gt;,shell=&lt;null&gt;,stdInOnce=&lt;null&gt;,stdinOpen=&lt;null&gt;,stopSignal=&lt;null&gt;,stopTimeout=&lt;null&gt;,tty=&lt;null&gt;,user=&lt;null&gt;,volumes=Volumes(volumes=[]),workingDir=&lt;null&gt;]
+16:49:34.243 [Test worker] INFO  tc.docker.io/redocly/cli:2.11.1 - Container docker.io/redocly/cli:2.11.1 is starting: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640
+16:49:34.244 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640
+16:49:34.433 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640,false
+16:49:34.434 [Test worker] DEBUG o.t.s.c.g.d.c.e.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640/json], queryParams={}}
+16:49:34.440 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: docker.io/redocly/cli:2.11.1
+16:49:34.448 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: 
+16:49:34.644 [Test worker] DEBUG o.t.c.w.s.HostPortWaitStrategy - Liveness check ports of /hungry_goldwasser is empty. Not waiting.
+16:49:34.644 [Test worker] INFO  tc.docker.io/redocly/cli:2.11.1 - Container docker.io/redocly/cli:2.11.1 started in PT0.559307283S
+Container started successfully!
+Container ID: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640
+16:49:34.644 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640,false
+16:49:34.645 [Test worker] DEBUG o.t.s.c.g.d.c.e.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640/json], queryParams={}}
+16:49:34.652 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640,&lt;null&gt;
+16:49:35.267 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640,false
+16:49:35.267 [Test worker] DEBUG o.t.s.c.g.d.c.e.InspectContainerCmdExec - GET: DefaultWebTarget{path=[/containers/ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640/json], queryParams={}}
+16:49:35.274 [Test worker] DEBUG o.t.s.c.g.d.c.command.AbstrDockerCmd - Cmd: ac9ffe0b7b20852dd8ee3b56cd7bbdc5e5f7f0d78f737084e1ed65919c53a640,true,true
+16:49:35.288 [Test worker] DEBUG o.t.utility.ResourceReaper - Removed container and associated volume(s): docker.io/redocly/cli:2.11.1
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Dec 4, 2025, 4:49:35 PM</p>
+</div>
+</div>
+</body>
+</html>
