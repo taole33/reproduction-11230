@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Make gradlew executable
-        run: chmod +x /gradlew
+        run: chmod +x gradlew
 
       - name: Run Reproduction Test
         working-directory: ./
