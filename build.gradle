@@ -3,22 +3,17 @@ plugins {
 }
 
 repositories {
-    // mavenLocal()
     mavenCentral()
 }
 
 dependencies {
-    // 報告されている問題のバージョン
     testImplementation "org.testcontainers:testcontainers:2.0.2"
-    // JUnit 5
     testImplementation "org.junit.jupiter:junit-jupiter:5.10.1"
-    // ログ出力用 (デバッグに必須)
     testImplementation "ch.qos.logback:logback-classic:1.4.14"
 }
 
 test {
     useJUnitPlatform()
-    // ログを標準出力に出す
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError" 
         showStandardStreams = true
